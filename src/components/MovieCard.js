@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 import $ from 'jquery';
+import StarRating from './StarRating';
 
 const MovieCard = (props) => {
 
@@ -35,6 +36,7 @@ const MovieCard = (props) => {
                 </h2>
                 <h3>{movie.director}</h3>
                 <p>{movie.description}</p>
+                <StarRating/>
             </div>
         </div>
     )
